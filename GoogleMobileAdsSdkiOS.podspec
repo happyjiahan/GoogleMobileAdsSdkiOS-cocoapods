@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.preserve_paths = '**/*.a'
 
   s.frameworks = "AVFoundation", "AudioToolbox", "CoreTelephony", "MessageUI", "SystemConfiguration", "CoreGraphics", "AdSupport", "StoreKit"
-  s.library = 'libGoogleAdMobAds.a'
+  s.library = 'libGoogleAdMobAds'
   
   s.platform = :ios
   s.ios.deployment_target = '7.0'
