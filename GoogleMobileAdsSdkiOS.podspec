@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 
   s.frameworks = "AVFoundation", "AudioToolbox", "CoreTelephony", "MessageUI", "SystemConfiguration", "CoreGraphics", "AdSupport", "StoreKit"
   s.library = 'libGoogleAdMobAds'
-  
+  s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/GoogleMobileAdsSdkiOS"' }
+
   s.platform = :ios
   s.ios.deployment_target = '7.0'
   s.requires_arc = true
